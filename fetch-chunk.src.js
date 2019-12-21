@@ -1,4 +1,4 @@
-export default async function fetchChunk(url, opts) {
+module.exports = async function fetchChunk(url, opts) {
     let onProgress = opts?opts.onProgress:undefined;
     const response = await fetch(url, opts);
     const reader = response.body.getReader();
