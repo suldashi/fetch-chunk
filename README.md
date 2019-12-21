@@ -25,11 +25,11 @@ import fetchChunk from "fetch-chunk";
 const fetchChunk = require("fetch-chunk");
 ```
 
-If you want to use a `script` tag, you need to include the `fetch-chunk.js`
+If you want to use a `script` tag, you need to include the `fetch-chunk.build.js`
 file, like so:
 
 ``` html
-<script src="fetch-chunk.js"></script>
+<script src="fetch-chunk.build.js"></script>
 ```
 
 The `fetchChunk` function will then be available in the browser's `window` object.
@@ -71,7 +71,7 @@ npm install -g browserify
 Then, run the following command to build the final file:
 
 ``` bash
-browserify fetch-chunk.src.js --standalone fetchChunk > fetch-chunk.js
+browserify fetch-chunk.src.js --standalone fetchChunk > fetch-chunk.build.js
 ```
 
 License: MIT
