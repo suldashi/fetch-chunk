@@ -2,7 +2,7 @@
   "name": "fetch-chunk",
   "version": "2.2.1",
   "description": "An extension of the browser fetch function allowing us to process incoming data in chunks instead of waiting for the full fetch to complete.",
-  "main": "fetch-chunk.build.js",
+  "main": "fetch-chunk.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

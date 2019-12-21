@@ -25,11 +25,11 @@ import fetchChunk from "fetch-chunk";
 const fetchChunk = require("fetch-chunk");
 ```
 
-If you want to use a `script` tag, you need to include the `fetch-chunk.build.js`
+If you want to use a `script` tag, you need to include the `fetch-chunk.browser.js`
 file, like so:
 
 ``` html
-<script src="fetch-chunk.build.js"></script>
+<script src="fetch-chunk.browser.js"></script>
 ```
 
 The `fetchChunk` function will then be available in the browser's `window` object.
@@ -56,22 +56,6 @@ fetchChunk("url/to/big/file.mp4", {
     // data is a Uint8Array object
     }
 });
-```
-
-How to build
--------
-
-To build from source, you will need `browserify` installed globally in your system.
-You can do that by typing the following command:
-
-``` bash
-npm install -g browserify
-```
-
-Then, run the following command to build the final file:
-
-``` bash
-browserify fetch-chunk.src.js --standalone fetchChunk > fetch-chunk.build.js
 ```
 
 License: MIT
